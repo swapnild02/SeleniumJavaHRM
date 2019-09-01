@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SanityTestScenario">
+	<groups>
+		<run>
+			<include name="sanity"></include>
+		</run>
+	</groups>
+	<test name="Sprint1">
+		<classes>
+			<class name="com.OrangeHRM.TestCases.LoginTestCase" />
+			<class name="com.OrangeHRM.TestCases.HomePageTestCase"/>
+		</classes>
+	</test> <!-- Sanity -->
+</suite> <!-- Suite -->

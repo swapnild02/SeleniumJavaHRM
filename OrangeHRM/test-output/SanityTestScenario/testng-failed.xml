@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SanityTestScenario]">
+  <groups>
+    <run>
+      <include name="sanity"/>
+    </run>
+  </groups>
+  <test name="Sprint1">
+    <classes>
+      <class name="com.OrangeHRM.TestCases.LoginTestCase"/>
+      <class name="com.OrangeHRM.TestCases.HomePageTestCase"/>
+    </classes>
+  </test> <!-- Sprint1 -->
+</suite> <!-- Failed suite [SanityTestScenario] -->

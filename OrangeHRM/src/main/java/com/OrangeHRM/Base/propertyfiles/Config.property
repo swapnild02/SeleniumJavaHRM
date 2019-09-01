@@ -1,0 +1,3 @@
+ChromePath=D:\\TestNG\\OrangeHRM\\src\\main\\java\\Dirvers\\chromedriver.exe
+URL=http://127.0.0.1/orangehrm/symfony/web/index.php/auth/login
+TestDataExcell=D:\\TestNG\\OrangeHRM\\src\\main\\java\\ExcellFileTestData\\TestData.xlsx

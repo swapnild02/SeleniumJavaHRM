@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regration]">
+  <groups>
+    <run>
+      <include name="regration"/>
+    </run>
+  </groups>
+  <test name="Spint1">
+    <classes>
+      <class name="com.OrangeHRM.TestCases.LoginTestCase"/>
+    </classes>
+  </test> <!-- Spint1 -->
+</suite> <!-- Failed suite [Regration] -->

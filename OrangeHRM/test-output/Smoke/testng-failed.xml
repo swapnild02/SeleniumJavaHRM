@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke]">
+  <groups>
+    <run>
+      <include name="smoke"/>
+    </run>
+  </groups>
+  <test name="smoke">
+    <classes>
+      <class name="com.OrangeHRM.TestCases.LoginTestCase"/>
+    </classes>
+  </test> <!-- smoke -->
+</suite> <!-- Failed suite [Smoke] -->

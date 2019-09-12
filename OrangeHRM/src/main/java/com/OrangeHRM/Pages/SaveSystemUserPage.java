@@ -18,6 +18,10 @@ public class SaveSystemUserPage extends Base {
 	WebElement element;
 	DropDownList dropDownList;
 	Wait wait;
+	
+	boolean isdispalyed;
+	
+	
 	String DDL_UserRole_Id="systemUser_userType";
 	String SearchBox_EmployeeName_Id="systemUser_employeeName_empName";
 	
@@ -48,12 +52,15 @@ public class SaveSystemUserPage extends Base {
 	
 	public void search_EmployeeName(String Text){
 		element=driver.findElement(By.id(SearchBox_EmployeeName_Id));
+		element.clear();
 		element.sendKeys(Text);
 		element.click();
 	}
 	
 	public void username(String Text){
-		driver.findElement(By.id(textbox_UserName_Id)).sendKeys(Text);
+		element=driver.findElement(By.id(textbox_UserName_Id));
+		element.clear();
+		element.sendKeys(Text);
 	}
 	public void changepasswordcheckbox(){
 		driver.findElement(By.xpath(chk_ChangePassword)).click();
@@ -73,19 +80,21 @@ public class SaveSystemUserPage extends Base {
 	public ViewSystemUsersPage clickAdd(){
 		try 
 		{
-			Thread.sleep(3000);
 			element=driver.findElement(By.xpath(btn_Add_Xpath));
 			element.click();
-		} 
-		catch (InterruptedException e1) 
-		{
-			e1.printStackTrace();
 		}
 		catch (StaleElementReferenceException e) 
 		{
 			e.printStackTrace();
 		}
+		
+		element=driver.findElement(By.xpath(btn_Add_Xpath));
 		viewsystemuserspage =new ViewSystemUsersPage(driver);
+		try {
+			Thread.sleep(20000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		return viewsystemuserspage;
 	}
 	
@@ -107,12 +116,15 @@ public class SaveSystemUserPage extends Base {
 		}	
 	}
 	
-	public void clickOnCancel(){
+	public ViewSystemUsersPage clickOnCancel(){
 		try{
 			driver.findElement(By.id(btn_Cancel_Id)).click();
-		}catch(StaleElementReferenceException e){
-			driver.findElement(By.id(btn_Cancel_Id)).click();
+		}catch(NoSuchElementException e){
+			e.printStackTrace();
 		}
+		viewsystemuserspage =new ViewSystemUsersPage(driver);
+		return viewsystemuserspage;
 	}
+	
 
 }

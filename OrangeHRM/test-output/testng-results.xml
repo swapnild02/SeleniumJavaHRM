@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="2" passed="0">
+<testng-results skipped="0" failed="1" total="14" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="79811" started-at="2019-09-01T06:13:17Z" finished-at="2019-09-01T06:14:37Z">
+  <suite name="SmokeTestScenario" duration-ms="203522" started-at="2019-09-08T18:11:36Z" finished-at="2019-09-08T18:15:00Z">
     <groups>
+      <group name="regration">
+        <method signature="LoginTestCase.clickOnFacebookTest()[pri:5, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="clickOnFacebookTest" class="com.OrangeHRM.TestCases.LoginTestCase"/>
+        <method signature="LoginTestCase.clickOnLinkedInTest()[pri:4, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="clickOnLinkedInTest" class="com.OrangeHRM.TestCases.LoginTestCase"/>
+        <method signature="LoginTestCase.clickOnTwiterTest()[pri:6, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="clickOnTwiterTest" class="com.OrangeHRM.TestCases.LoginTestCase"/>
+        <method signature="LoginTestCase.clickOnYoutubeTest()[pri:7, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="clickOnYoutubeTest" class="com.OrangeHRM.TestCases.LoginTestCase"/>
+        <method signature="LoginTestCase.logIn(java.lang.String, java.lang.String)[pri:1, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="logIn" class="com.OrangeHRM.TestCases.LoginTestCase"/>
+        <method signature="LoginTestCase.logInNegative(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="logInNegative" class="com.OrangeHRM.TestCases.LoginTestCase"/>
+        <method signature="LoginTestCase.testTitle()[pri:3, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="testTitle" class="com.OrangeHRM.TestCases.LoginTestCase"/>
+        <method signature="LoginTestCase.totallinkTest()[pri:9, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="totallinkTest" class="com.OrangeHRM.TestCases.LoginTestCase"/>
+        <method signature="LoginTestCase.verfylogoImage()[pri:8, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="verfylogoImage" class="com.OrangeHRM.TestCases.LoginTestCase"/>
+      </group> <!-- regration -->
+      <group name="smoke">
+        <method signature="LoginTestCase.logIn(java.lang.String, java.lang.String)[pri:1, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="logIn" class="com.OrangeHRM.TestCases.LoginTestCase"/>
+        <method signature="LoginTestCase.testTitle()[pri:3, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="testTitle" class="com.OrangeHRM.TestCases.LoginTestCase"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="LoginTestCase.logIn(java.lang.String, java.lang.String)[pri:1, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="logIn" class="com.OrangeHRM.TestCases.LoginTestCase"/>
+      </group> <!-- sanity -->
     </groups>
-    <test name="Default test" duration-ms="79811" started-at="2019-09-01T06:13:17Z" finished-at="2019-09-01T06:14:37Z">
-      <class name="com.OrangeHRM.TestCases.SaveSystemUserTextCase">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.SaveSystemUserTextCase@9353778]" name="setUp" is-config="true" duration-ms="28033" started-at="2019-09-01T11:43:20Z" finished-at="2019-09-01T11:43:48Z">
+    <test name="Sprint1" duration-ms="203522" started-at="2019-09-08T18:11:36Z" finished-at="2019-09-08T18:15:00Z">
+      <class name="com.OrangeHRM.TestCases.LoginTestCase">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="setUp" is-config="true" duration-ms="16213" started-at="2019-09-08T23:41:38Z" finished-at="2019-09-08T23:41:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyAddUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.OrangeHRM.TestCases.SaveSystemUserTextCase@9353778]" name="verifyAddUser" duration-ms="24172" started-at="2019-09-01T11:43:48Z" data-provider="getdataforAddUser" finished-at="2019-09-01T11:44:12Z">
+        <test-method status="PASS" signature="logIn(java.lang.String, java.lang.String)[pri:1, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="logIn" duration-ms="39837" started-at="2019-09-08T23:41:54Z" data-provider="getlogindatafromExcell" finished-at="2019-09-08T23:42:34Z">
           <params>
             <param index="0">
               <value>
@@ -23,55 +41,201 @@
                 <![CDATA[admin123]]>
               </value>
             </param>
-            <param index="2">
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="tearDown" is-config="true" duration-ms="3012" started-at="2019-09-08T23:42:34Z" finished-at="2019-09-08T23:42:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="setUp" is-config="true" duration-ms="18833" started-at="2019-09-08T23:42:37Z" finished-at="2019-09-08T23:42:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logIn(java.lang.String, java.lang.String)[pri:1, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="logIn" duration-ms="2777" started-at="2019-09-08T23:42:56Z" data-provider="getlogindatafromExcell" finished-at="2019-09-08T23:42:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Umakant]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="tearDown" is-config="true" duration-ms="939" started-at="2019-09-08T23:42:58Z" finished-at="2019-09-08T23:42:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="setUp" is-config="true" duration-ms="6678" started-at="2019-09-08T23:43:00Z" finished-at="2019-09-08T23:43:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logInNegative(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="logInNegative" duration-ms="630" started-at="2019-09-08T23:43:06Z" data-provider="getlogindataforNegative" finished-at="2019-09-08T23:43:07Z">
+          <params>
+            <param index="0">
               <value>
                 <![CDATA[Admin]]>
               </value>
             </param>
-            <param index="3">
+            <param index="1">
               <value>
-                <![CDATA[Umakant S Kodarlikar]]>
+                <![CDATA[]]>
               </value>
             </param>
-            <param index="4">
+            <param index="2">
               <value>
-                <![CDATA[Saroj15]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Enabled]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[saroj123]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[saroj123]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Saroj15]]>
+                <![CDATA[Password cannot be empty]]>
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInNegative -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="tearDown" is-config="true" duration-ms="987" started-at="2019-09-08T23:43:07Z" finished-at="2019-09-08T23:43:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="setUp" is-config="true" duration-ms="8247" started-at="2019-09-08T23:43:08Z" finished-at="2019-09-08T23:43:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logInNegative(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="logInNegative" duration-ms="571" started-at="2019-09-08T23:43:16Z" data-provider="getlogindataforNegative" finished-at="2019-09-08T23:43:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Username cannot be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInNegative -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="tearDown" is-config="true" duration-ms="1074" started-at="2019-09-08T23:43:17Z" finished-at="2019-09-08T23:43:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="setUp" is-config="true" duration-ms="6943" started-at="2019-09-08T23:43:18Z" finished-at="2019-09-08T23:43:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logInNegative(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="logInNegative" duration-ms="520" started-at="2019-09-08T23:43:25Z" data-provider="getlogindataforNegative" finished-at="2019-09-08T23:43:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Username cannot be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInNegative -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="tearDown" is-config="true" duration-ms="1032" started-at="2019-09-08T23:43:25Z" finished-at="2019-09-08T23:43:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="setUp" is-config="true" duration-ms="7309" started-at="2019-09-08T23:43:26Z" finished-at="2019-09-08T23:43:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logInNegative(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="logInNegative" duration-ms="1416" started-at="2019-09-08T23:43:34Z" data-provider="getlogindataforNegative" finished-at="2019-09-08T23:43:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInNegative -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="tearDown" is-config="true" duration-ms="920" started-at="2019-09-08T23:43:35Z" finished-at="2019-09-08T23:43:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="setUp" is-config="true" duration-ms="8973" started-at="2019-09-08T23:43:36Z" finished-at="2019-09-08T23:43:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logInNegative(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="logInNegative" duration-ms="1834" started-at="2019-09-08T23:43:45Z" data-provider="getlogindataforNegative" finished-at="2019-09-08T23:43:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sanjay]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sanjay12313]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInNegative -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="tearDown" is-config="true" duration-ms="974" started-at="2019-09-08T23:43:47Z" finished-at="2019-09-08T23:43:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="setUp" is-config="true" duration-ms="7279" started-at="2019-09-08T23:43:48Z" finished-at="2019-09-08T23:43:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testTitle()[pri:3, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="testTitle" duration-ms="40" started-at="2019-09-08T23:43:55Z" finished-at="2019-09-08T23:43:55Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Saroj15] but found [null]]]>
+              <![CDATA[expected [OrangeHRM1] but found [OrangeHRM]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Saroj15] but found [null]
+              <![CDATA[java.lang.AssertionError: expected [OrangeHRM1] but found [OrangeHRM]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:130)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:190)
 	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.OrangeHRM.TestCases.SaveSystemUserTextCase.verifyAddUser(SaveSystemUserTextCase.java:85)
+	at com.OrangeHRM.TestCases.LoginTestCase.testTitle(LoginTestCase.java:94)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -101,111 +265,84 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddUser -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.SaveSystemUserTextCase@9353778]" name="tearDown" is-config="true" duration-ms="1808" started-at="2019-09-01T11:44:12Z" finished-at="2019-09-01T11:44:14Z">
+        </test-method> <!-- testTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="tearDown" is-config="true" duration-ms="959" started-at="2019-09-08T23:43:56Z" finished-at="2019-09-08T23:43:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.SaveSystemUserTextCase@9353778]" name="setUp" is-config="true" duration-ms="8895" started-at="2019-09-01T11:44:14Z" finished-at="2019-09-01T11:44:23Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="setUp" is-config="true" duration-ms="8911" started-at="2019-09-08T23:43:57Z" finished-at="2019-09-08T23:44:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyAddUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.OrangeHRM.TestCases.SaveSystemUserTextCase@9353778]" name="verifyAddUser" duration-ms="12888" started-at="2019-09-01T11:44:23Z" data-provider="getdataforAddUser" finished-at="2019-09-01T11:44:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Umakant S Kodarlikar]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Surjit15]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Enabled]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[saroj123]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[saroj123]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Surjit15]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Surjit15] but found [null]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Surjit15] but found [null]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:130)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.OrangeHRM.TestCases.SaveSystemUserTextCase.verifyAddUser(SaveSystemUserTextCase.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="clickOnLinkedInTest()[pri:4, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="clickOnLinkedInTest" duration-ms="186" started-at="2019-09-08T23:44:06Z" finished-at="2019-09-08T23:44:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddUser -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.SaveSystemUserTextCase@9353778]" name="tearDown" is-config="true" duration-ms="1055" started-at="2019-09-01T11:44:35Z" finished-at="2019-09-01T11:44:37Z">
+        </test-method> <!-- clickOnLinkedInTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="tearDown" is-config="true" duration-ms="898" started-at="2019-09-08T23:44:07Z" finished-at="2019-09-08T23:44:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.OrangeHRM.TestCases.SaveSystemUserTextCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="setUp" is-config="true" duration-ms="9353" started-at="2019-09-08T23:44:07Z" finished-at="2019-09-08T23:44:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickOnFacebookTest()[pri:5, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="clickOnFacebookTest" duration-ms="499" started-at="2019-09-08T23:44:17Z" finished-at="2019-09-08T23:44:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnFacebookTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="tearDown" is-config="true" duration-ms="1506" started-at="2019-09-08T23:44:17Z" finished-at="2019-09-08T23:44:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="setUp" is-config="true" duration-ms="8652" started-at="2019-09-08T23:44:19Z" finished-at="2019-09-08T23:44:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickOnTwiterTest()[pri:6, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="clickOnTwiterTest" duration-ms="398" started-at="2019-09-08T23:44:27Z" finished-at="2019-09-08T23:44:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnTwiterTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="tearDown" is-config="true" duration-ms="1035" started-at="2019-09-08T23:44:28Z" finished-at="2019-09-08T23:44:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="setUp" is-config="true" duration-ms="9492" started-at="2019-09-08T23:44:29Z" finished-at="2019-09-08T23:44:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickOnYoutubeTest()[pri:7, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="clickOnYoutubeTest" duration-ms="391" started-at="2019-09-08T23:44:38Z" finished-at="2019-09-08T23:44:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnYoutubeTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="tearDown" is-config="true" duration-ms="1043" started-at="2019-09-08T23:44:39Z" finished-at="2019-09-08T23:44:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="setUp" is-config="true" duration-ms="7454" started-at="2019-09-08T23:44:40Z" finished-at="2019-09-08T23:44:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verfylogoImage()[pri:8, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="verfylogoImage" duration-ms="236" started-at="2019-09-08T23:44:47Z" finished-at="2019-09-08T23:44:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfylogoImage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="tearDown" is-config="true" duration-ms="958" started-at="2019-09-08T23:44:47Z" finished-at="2019-09-08T23:44:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="setUp" is-config="true" duration-ms="9948" started-at="2019-09-08T23:44:48Z" finished-at="2019-09-08T23:44:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="totallinkTest()[pri:9, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="totallinkTest" duration-ms="194" started-at="2019-09-08T23:44:58Z" finished-at="2019-09-08T23:44:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- totallinkTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a]" name="tearDown" is-config="true" duration-ms="937" started-at="2019-09-08T23:44:59Z" finished-at="2019-09-08T23:45:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.OrangeHRM.TestCases.LoginTestCase -->
+    </test> <!-- Sprint1 -->
+  </suite> <!-- SmokeTestScenario -->
 </testng-results>

@@ -55,18 +55,66 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Sprint1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 30 19:20:28 IST 2019</td>
+<td>Started on:</td><td>Sun Sep 08 23:41:36 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>62 seconds (62442 ms)</td>
+<tr><td>Total time:</td><td>203 seconds (203522 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>smoke </td>
+<td>Included groups:</td><td></td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.OrangeHRM.TestCases.LoginTestCase.testTitle()'><b>testTitle</b><br>Test class: com.OrangeHRM.TestCases.LoginTestCase</td>
+<td><div><pre>java.lang.AssertionError: expected [OrangeHRM1] but found [OrangeHRM]
+	at com.OrangeHRM.TestCases.LoginTestCase.testTitle(LoginTestCase.java:94)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1312843412", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1312843412'><pre>java.lang.AssertionError: expected [OrangeHRM1] but found [OrangeHRM]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.OrangeHRM.TestCases.LoginTestCase.testTitle(LoginTestCase.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+</pre></div></td>
+<td>0</td>
+<td>com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,25 +123,70 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.OrangeHRM.TestCases.LoginTestCase.clickOnFacebookTest()'><b>clickOnFacebookTest</b><br>Test class: com.OrangeHRM.TestCases.LoginTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a</td></tr>
+<tr>
+<td title='com.OrangeHRM.TestCases.LoginTestCase.clickOnLinkedInTest()'><b>clickOnLinkedInTest</b><br>Test class: com.OrangeHRM.TestCases.LoginTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a</td></tr>
+<tr>
+<td title='com.OrangeHRM.TestCases.LoginTestCase.clickOnTwiterTest()'><b>clickOnTwiterTest</b><br>Test class: com.OrangeHRM.TestCases.LoginTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a</td></tr>
+<tr>
+<td title='com.OrangeHRM.TestCases.LoginTestCase.clickOnYoutubeTest()'><b>clickOnYoutubeTest</b><br>Test class: com.OrangeHRM.TestCases.LoginTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a</td></tr>
+<tr>
 <td title='com.OrangeHRM.TestCases.LoginTestCase.logIn()'><b>logIn</b><br>Test class: com.OrangeHRM.TestCases.LoginTestCase<br>Parameters: Admin, admin123</td>
 <td></td>
-<td>3</td>
-<td>com.OrangeHRM.TestCases.LoginTestCase@724af044</td></tr>
-<tr>
-<td title='com.OrangeHRM.TestCases.LoginTestCase.logIn()'><b>logIn</b><br>Test class: com.OrangeHRM.TestCases.LoginTestCase<br>Parameters: sanjay, sanjay123</td>
-<td></td>
-<td>3</td>
-<td>com.OrangeHRM.TestCases.LoginTestCase@724af044</td></tr>
+<td>39</td>
+<td>com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a</td></tr>
 <tr>
 <td title='com.OrangeHRM.TestCases.LoginTestCase.logIn()'><b>logIn</b><br>Test class: com.OrangeHRM.TestCases.LoginTestCase<br>Parameters: Umakant, 1234567890</td>
 <td></td>
-<td>3</td>
-<td>com.OrangeHRM.TestCases.LoginTestCase@724af044</td></tr>
+<td>2</td>
+<td>com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a</td></tr>
 <tr>
-<td title='com.OrangeHRM.TestCases.HomePageTestCase.logoutTest()'><b>logoutTest</b><br>Test class: com.OrangeHRM.TestCases.HomePageTestCase</td>
+<td title='com.OrangeHRM.TestCases.LoginTestCase.logInNegative()'><b>logInNegative</b><br>Test class: com.OrangeHRM.TestCases.LoginTestCase<br>Parameters: Admin, , Password cannot be empty</td>
+<td></td>
+<td>0</td>
+<td>com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a</td></tr>
+<tr>
+<td title='com.OrangeHRM.TestCases.LoginTestCase.logInNegative()'><b>logInNegative</b><br>Test class: com.OrangeHRM.TestCases.LoginTestCase<br>Parameters: , admin123, Username cannot be empty</td>
+<td></td>
+<td>0</td>
+<td>com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a</td></tr>
+<tr>
+<td title='com.OrangeHRM.TestCases.LoginTestCase.logInNegative()'><b>logInNegative</b><br>Test class: com.OrangeHRM.TestCases.LoginTestCase<br>Parameters: , , Username cannot be empty</td>
+<td></td>
+<td>0</td>
+<td>com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a</td></tr>
+<tr>
+<td title='com.OrangeHRM.TestCases.LoginTestCase.logInNegative()'><b>logInNegative</b><br>Test class: com.OrangeHRM.TestCases.LoginTestCase<br>Parameters: Admin1, admin123, Invalid credentials</td>
 <td></td>
 <td>1</td>
-<td>com.OrangeHRM.TestCases.HomePageTestCase@39aeed2f</td></tr>
+<td>com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a</td></tr>
+<tr>
+<td title='com.OrangeHRM.TestCases.LoginTestCase.logInNegative()'><b>logInNegative</b><br>Test class: com.OrangeHRM.TestCases.LoginTestCase<br>Parameters: sanjay, sanjay12313, Invalid credentials</td>
+<td></td>
+<td>1</td>
+<td>com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a</td></tr>
+<tr>
+<td title='com.OrangeHRM.TestCases.LoginTestCase.totallinkTest()'><b>totallinkTest</b><br>Test class: com.OrangeHRM.TestCases.LoginTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a</td></tr>
+<tr>
+<td title='com.OrangeHRM.TestCases.LoginTestCase.verfylogoImage()'><b>verfylogoImage</b><br>Test class: com.OrangeHRM.TestCases.LoginTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.OrangeHRM.TestCases.LoginTestCase@3e6fa38a</td></tr>
 </table><p>
 </body>
 </html>

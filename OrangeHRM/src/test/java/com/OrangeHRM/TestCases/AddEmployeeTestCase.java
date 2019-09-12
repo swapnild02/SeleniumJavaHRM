@@ -3,7 +3,6 @@ package com.OrangeHRM.TestCases;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.OrangeHRM.Base.Base;
 import com.OrangeHRM.Pages.LoginPage;
 

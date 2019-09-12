@@ -101,7 +101,7 @@ public class ReadandWriteExcell {
 			for(int i=0;i<lastRow;i++){
 				for(int j=0;j<lastCol;j++){
 					data[i][j]=sheet1.getRow(i+1).getCell(j).toString();
-					System.err.println(data[i][j]);
+					System.out.println(data[i][j]);
 				}
 			}
 			
@@ -118,6 +118,23 @@ public class ReadandWriteExcell {
 		catch(IOException e)
 		{
 			e.printStackTrace();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		finally{
+			try {
+				fis.close();
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
 		}
 		return data;
 		

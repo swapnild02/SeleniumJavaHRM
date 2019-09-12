@@ -4,11 +4,6 @@
 <listeners>
 <listener class-name="extentReport.ExtentReporterNG"/>
 </listeners>
-<groups>
-	<run>
-		<include name="smoke"></include>
-	</run>
-</groups>
   <test name="Sprint1">
     <classes>
       <class name="com.OrangeHRM.TestCases.LoginTestCase"/>

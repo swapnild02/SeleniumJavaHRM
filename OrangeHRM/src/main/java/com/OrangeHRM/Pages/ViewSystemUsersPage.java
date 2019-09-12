@@ -18,11 +18,14 @@ public class ViewSystemUsersPage extends Base {
 
 	String getusername_Name;
 	String Names;
+	boolean isdispalyed,isEnabled;
 
 	String btn_Search_Id = "searchBtn";
 	String btn_Reset_Id = "resetBtn";
 	String btn_Add_Id = "btnAdd";
 	String btn_Delete_Id = "btnDelete";
+	String btn_Delete_Records_OK_Xpath="//input[@id='dialogDeleteBtn'and @value='Ok']";
+	String btn_Cancel_Records_OK_Xpath="//input[@class='btn reset'and @value='Cancel']";
 	String chkBox_CheckAll_Id = "ohrmList_chkSelectAll";
 	String halfXpathofusername1 = "//a[text()='";
 	String halfXpathofusername2 = "']";
@@ -37,13 +40,39 @@ public class ViewSystemUsersPage extends Base {
 		homepage = new HomePage(driver);
 	}
 
-	public SaveSystemUserPage btnclickOnAdd() {
+	public SaveSystemUserPage clickOnAdd() {
 
 		element = driver.findElement(By.id(btn_Add_Id));
 		element.click();
 		saveSystemUserPage = new SaveSystemUserPage(driver);
 		return saveSystemUserPage;
 
+	}
+	public boolean addbuttonPresent(){
+		element = driver.findElement(By.id(btn_Add_Id));
+		isdispalyed=element.isDisplayed();
+		return isdispalyed;
+	}
+	
+	public boolean isDeleteButtonEnabled(){
+		element=driver.findElement(By.id(btn_Delete_Id));
+		isEnabled=element.isEnabled();
+		return isEnabled;
+	}
+	
+	public void clickOnDelete(){
+		element=driver.findElement(By.id(btn_Delete_Id));
+		element.click();
+		element=driver.findElement(By.xpath(btn_Delete_Records_OK_Xpath));
+		element.click();
+		
+	}
+	public void clickOnDeleteCancel(){
+		element=driver.findElement(By.id(btn_Delete_Id));
+		element.click();
+		element=driver.findElement(By.xpath(btn_Cancel_Records_OK_Xpath));
+		element.click();
+		
 	}
 
 	public SaveSystemUserPage clickOnUserNameWebColumn(String username) {

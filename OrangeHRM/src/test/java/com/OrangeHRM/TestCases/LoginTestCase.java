@@ -1,5 +1,6 @@
 package com.OrangeHRM.TestCases;
 
+
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,12 +8,14 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.OrangeHRM.Pages.HomePage;
 import com.OrangeHRM.Pages.LoginPage;
 import com.OrangeHRM.Base.*;
-
+@Listeners(CustomListener.class)
 public class LoginTestCase extends Base{
 	
 	
@@ -22,7 +25,9 @@ public class LoginTestCase extends Base{
 	Wait wait;
 	WebElement element;
 	ReadandWriteExcell readexcell;
+	ScreenShot screenshot;
 	String text;
+	SoftAssert sa;
 	
 	
 	@BeforeMethod(groups={"smoke","sanity","regration"})
@@ -83,10 +88,15 @@ public class LoginTestCase extends Base{
 		}
 	}	
 	
-	@Test(priority=3,groups={"regration"})
+	@Test(priority=3,groups={"regration","smoke"})
 	public void testTitle(){
 		String Title=login.title();
-		Assert.assertEquals(Title, "OrangeHRM");
+		Assert.assertEquals(Title, "OrangeHRM1");
+		sa=new SoftAssert();
+		sa.assertEquals(Title, "OrangeHRM1");
+		sa.assertAll();
+		
+		
 	}
 	@Test(priority=4,groups={"regration"})
 	public void clickOnLinkedInTest(){
